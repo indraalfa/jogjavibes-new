@@ -6638,8 +6638,9 @@ a:hover, a:active {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-    width: 1140px;
+    width: 800  px;
   }
+
   .megamenu .megamenu-main.megamenu-carousel-menu {
     width: calc(100vw - 120px);
   }
@@ -6655,7 +6656,7 @@ a:hover, a:active {
   margin-bottom: 15px;
 }
 .megamenu .megamenu-main .megamenu-column-inner + .megamenu-column-inner {
-  margin-top: 26px;
+  margin-top: 26px; /* Ubah dari 26px */
 }
 .megamenu .megamenu-main .megamenu-wrapper {
   padding: 15px 0 10px;
@@ -6675,8 +6676,9 @@ a:hover, a:active {
 }
 .megamenu .megamenu-main .custom-megamenu li a {
   padding: 6px 0px;
+  white-space: nowrap; /* Tambahkan ini */
+  text-overflow: ellipsis; /* Tambahkan ini */
 }
-
 /*-------------------------------------------------
     [ ### Sidebar Menu ]
 */
@@ -11090,6 +11092,12 @@ body.sidemenu-active #pp-nav.right {
 }
 .contact-block #gmaps {
   height: 280px;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
 }
 
 .contact-form {
